@@ -1,0 +1,33 @@
+.par {
+    background-color: rgba( 255, 127, 96, 0.8);
+    word-wrap: break-word;
+}
+.impar {
+    background-color: rgba(136, 136, 255, 0.8);
+    word-wrap: break-word;
+}
+
+body {
+    background-image: url("gogh.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.phplog {
+    white-space: pre;
+}
+
+.floating_flush {
+	position: fixed;
+	right: 1em;
+	bottom: 1em;
+	background-color: #bbbbbb;
+}
+
+.links {
+    background-color: #aaaaaa;
+}
+
+a:visited {
+    color: blue;
+}

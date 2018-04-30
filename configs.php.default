@@ -1,0 +1,37 @@
+<?php
+
+LogDisplayer::setConfigs([
+    'mysql' => [
+        'arquivo'      => '/var/log/mysql/error.log',
+        'nome'         => 'mysql',
+        'sqlMode'      => false,
+        'tag'          => 'div',
+        'specialTag'   => ['',''],
+        'specialClass' => '',
+    ],
+    // TODO implementar auto-descoberta de postgres em diversas versoes
+    'postgres'     => [
+        'arquivo'      => '/var/log/postgresql/postgresql-9.6-main.log',
+        'nome'         => 'postgres',
+        'sqlMode'      =>  "\|\-\-\|",
+        'tag'          => 'div',
+        'specialTag'   => ['',''],
+        'specialClass' => '',
+    ],
+    'php'          => [
+        'arquivo'      => '/var/log/apache2/error.log',
+        'nome'         => 'php',
+        'sqlMode'      => false,
+        'tag'          => 'pre',
+        'specialTag'   => ['',''],
+        'specialClass' => '',
+    ],
+    'apache-access'    => [
+        'arquivo'      => '/var/log/apache2/access.log',
+        'nome'         => 'apache-access',
+        'sqlMode'      => false,
+        'tag'          => 'pre',
+        'specialTag'   => ['',''],
+        'specialClass' => '',
+    ],
+]);
